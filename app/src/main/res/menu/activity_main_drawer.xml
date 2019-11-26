@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:onClick="goToProfile"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/book"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:onClick="goToBookGenre"
+            android:title="Book Genres" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_new_releases_black_24dp"
+            android:onClick="goToUpcomingNews"
+            android:title="Upcoming News" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_reply_black_24dp"
+            android:onClick="logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>
